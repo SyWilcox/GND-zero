@@ -47,8 +47,8 @@ x = 0
 
 #load default font
 #alternativley load ttf - make sure font file is in same directory as python script
-#font = ImageFont.truetype('Minecraftia.ttf', 8)
-font = ImageFont.load_default()
+font = ImageFont.truetype('/fonts/nougatine.ttf', 10)
+#font = ImageFont.load_default()
 
 while True:
     draw.rectangle((0,0,width,height), outline=0, fill=0)
