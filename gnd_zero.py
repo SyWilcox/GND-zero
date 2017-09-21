@@ -52,8 +52,8 @@ font = ImageFont.truetype('/fonts/nougatine.ttf', 10)
 
 while True:
     draw.rectangle((0,0,width,height), outline=0, fill=0)
-    draw.text((x, top), str(METERPRETER SHELL), font=font, fill=225)
-    draw.text((x, top+8), str(reverse_tcp_65535), font=font, fill=255)
+    draw.text((x, top), str('METERPRETER SHELL'), font=font, fill=225)
+    draw.text((x, top+8), str('reverse_tcp_65535'), font=font, fill=255)
 
     #display image
     disp.image(image)
