@@ -1,4 +1,4 @@
-#GND ZERO
+GND ZERO
 
 #DROP MULTIPLE PAYLOADS WITH GUI MENU FOR PI ZERO / ZERO W
 
@@ -53,9 +53,27 @@ font = ImageFont.truetype('/fonts/nougatine.ttf', 10)
 while True:
     draw.rectangle((0,0,width,height), outline=0, fill=0)
     draw.text((x, top), str('METERPRETER SHELL'), font=font, fill=225)
-    draw.text((x, top+8), str('reverse_tcp_65535'), font=font, fill=255)
+    draw.text((x, top+8), str('WINDOWS > tcp_65535'), font=font, fill=255)
 
     #display image
     disp.image(image)
     disp.display()
-    time.sleep(.1)
+    time.sleep(10)
+
+    draw.rectangle((0,0,width,height), outline=0, fill=0)
+    draw.text((x, top), str('METERPRETER SHELL'), font=font, fill=225)
+    draw.text((x, top+8), str('OSX > https_5555'), font=font, fill=255)
+
+    #display image
+    disp.image(image)
+    disp.display()
+    time.sleep(10)
+
+    draw.rectangle((0,0,width,height), outline=0, fill=0)
+    draw.text((x, top), str('EXFIL WIFI'), font=font, fill=225)
+    draw.text((x, top+8), str('WINDOWS'), font=font, fill=255)
+
+    #display image
+    disp.image(image)
+    disp.display()
+    time.sleep(10)
